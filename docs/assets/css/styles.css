@@ -7,8 +7,10 @@
 
 body {
 	background: #eeeeee;
+
 }
-.parent {
+
+ .parent {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(2, 1fr);
@@ -30,9 +32,27 @@ body {
 	display: flex;
 }
 
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+.image{
+	margin-top: 15px;
+}
 .image img {
 	width: 44em;
-}
+	animation: float 6s ease-in-out infinite;
+
+} 
+
+
 
 .texts {
 	display: flex;
